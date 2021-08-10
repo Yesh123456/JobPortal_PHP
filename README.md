@@ -1,43 +1,49 @@
-# Job-Portal
+
+# Job Portal
 
 The online job portal application allows job seekers and recruiters to connect.The application provides the ability for job seekers to create their accounts, upload their profile and resume, search for jobs, apply for jobs, view different job openings. The application provides the ability for companies to create their accounts, search candidates, create job postings, and view candidates applications.
+## Installation
 
-# Website Testing
+Install my-project as zip or clone.
 
-Download the latest git_repos_jobportal.sql file.
-
-Step 1: Create a database called jobportal and import everything from database.sql file. Next check your db.php file for database connection configuration
-
-```php
-//Your db.php Mysql Config
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Your db name";
+```bash
+    git clone https://github.com/Yesh123456/Job-Portal.git
 ```
+Install PHP and PHPmyadmin.(For Ubuntu)
 
-Step2: Now you login as candidate with following details
-
-```php
-Email: tushar@gmail.com	
-Password: isco123
+```bash
+    sudo apt install php
+    sudo apt install php-myadmin
 ```
-
-Step3: Now you login as Company with following details
-
-```php
-Email: abhi@gmail.com
-Password: abhi123
+Install Lampp or Zampp.
+```bash
+    sudo apt install lampp
 ```
+Run your application and create and import sql file from folder.
 
-Step4: Now you login as Admin with following details
-
-```php
-Username: admin
-Password: 123456
-//Note: Password is not encrpyted from code so you CAN change directly from database.
+Check db.php file and change configuration accordingly
+```bash
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "Your db name";
 ```
+Now you login as candidate with following details
+```bash
+    Email: tushar@gmail.com	
+    Password: isco123
+```
+Now you login as Company with following details
 
+```bash
+    Email: abhi@gmail.com
+    Password: abhi123
+```
+Now you login as Admin with following details
+```bash
+    Username: admin
+    Password: 123456
+```
 Candidates Email Confirmation:
 >You CANNOT send emails from localhost server. So when you create a new candidate account it will not send any emails. So you must go to database, find that user and set ```active=1``` in order to make that account login. 
 
@@ -71,4 +77,30 @@ if($result === TRUE) {
 	exit();
 }
 ```
-HAPPY CODING....PEACE....
+
+## Features
+
+- Relevent scheme
+- Live previews
+- Responsive
+- Web Application
+
+  
+## Screenshots
+
+![App Screenshot](screenshot_1.png)
+
+## Feedback
+
+If you have any feedback, please reach out to us at isco30427@gmail.com
+
+  
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+  
