@@ -88,7 +88,7 @@ if($result === TRUE) {
   
 ## Screenshots
 
-![App Screenshot](screenshot_1.png)
+![App Screenshot](screenshot1.png)
 
 ## Feedback
 
